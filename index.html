@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>360&deg; Italian Pavilion</title>
+    <meta name="description" content="360&deg; Italian Pavilion<">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="archviz" crossorigin="anonymous" src="../img/37thItalian PavilionPano.png">
+		<!--<img id="archviz" crossorigin="anonymous" src="/img/city.jpg"> -->
+      </a-assets>
+
+      <!-- 360-degree image. -->
+      <a-sky id="image-360" radius="10" src="#archviz"></a-sky>
+
+      <!-- Camera + cursor. -->
+      <a-entity camera look-controls></a-entity>
+    </a-scene>
+  </body>
+</html>
